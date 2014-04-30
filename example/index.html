@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hallowscene</title>
+    <script src="js/isomer.min.js"></script>
+    <link rel="stylesheet" href="css/hallowscene.css">
+  </head>
+  <body>
+    <main>
+      <canvas id="hallowscene" width="1200" height="900"></canvas>
+    </main>
+    
+    <script src="../hallowscene.js"></script>
+    <script>
+      var iso = new Isomer(document.getElementById("hallowscene")),
+          hallowscene = new Hallowscene(iso);
+      hallowscene.addMoon(200, 180, 160);
+      iso.add(Isomer.Shape.Prism(Isomer.Point.ORIGIN, 8, 8, 1), hallowscene.colors.green); // platform
+
+      // Graveyard
+      hallowscene.addTombstone(1, 8, 0);
+      hallowscene.addTombstone(3, 8, 0);
+      hallowscene.addTombstone(5, 8, 0);
+      hallowscene.addTombstone(7, 8, 0);
+      hallowscene.addTombstone(1, 6, 0);
+      hallowscene.addTombstone(3, 6, 0);
+      hallowscene.addTombstone(5, 6, 0);
+      hallowscene.addTombstone(7, 6, 0);
+      hallowscene.addTombstone(1, 4, 0);
+      hallowscene.addTombstone(3, 4, 0);
+      hallowscene.addTombstone(5, 4, 0);
+      hallowscene.addTombstone(7, 4, 0);
+
+      // Pumpkin patch
+      hallowscene.addPumpkin(8, 1, 0);
+      hallowscene.addPumpkin(8, 3, 0);
+      hallowscene.addPumpkin(7, 2.2, 0);
+      hallowscene.addPumpkin(6, 1, 0);
+      
+      hallowscene.addJackolantern(1, 1, 0);
+    </script>
+  </body>
+</html>
