@@ -1,4 +1,5 @@
 # Hallowscene
+![hallowscene](example/hallowscene.png)
 ### A Halloween scene kit for [isomer](https://github.com/jdan/isomer)
 
 ## What's in the kit?
